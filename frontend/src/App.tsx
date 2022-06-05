@@ -18,7 +18,7 @@ function App() {
         <Route path="/form">
           <Route path=":movieId" element={<Form />} />
         </Route>
-        <Route path="movieregistration" element={<RegistrationMovie />}/>
+        <Route path="/movieregistration" element={<RegistrationMovie />}/>
       </Routes>
       <AddButton />
     </BrowserRouter>
