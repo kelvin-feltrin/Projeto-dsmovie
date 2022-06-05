@@ -10,7 +10,7 @@ function RegistrationMovie () {
 
     const navigate = useNavigate();
 
-    const [movie, setMovie] = useState<Movie>();
+    const [, setMovie] = useState<Movie>();
 
     useEffect(() => {
         axios.get(`${BASE_URL}/movieregistration`)
