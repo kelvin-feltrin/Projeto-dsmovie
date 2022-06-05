@@ -6,6 +6,8 @@ import {
 import Listing from 'pages/Listing';
 import Form from 'pages/Form';
 import Navbar from "components/Navbar";
+import RegistrationMovie from "components/RegistrationMovie";
+import AddButton from "components/AddButton";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
         <Route path="/form">
           <Route path=":movieId" element={<Form />} />
         </Route>
+        <Route path="movieregistration" element={<RegistrationMovie />}/>
       </Routes>
+      <AddButton />
     </BrowserRouter>
   );
 }
