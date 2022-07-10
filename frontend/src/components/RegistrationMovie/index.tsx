@@ -13,7 +13,7 @@ function RegistrationMovie () {
     const [, setMovie] = useState<Movie>();
 
     useEffect(() => {
-        axios.get(`${BASE_URL}/movieregistration`)
+        axios.post(`${BASE_URL}/movieregistration`)
             .then(response => {
                 setMovie(response.data)
             })
